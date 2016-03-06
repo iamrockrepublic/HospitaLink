@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPostTransparent"
+    android:gravity="center"
+    tools:context="com.example.marlowex.hopitalink.AddCommentActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorPostBackground"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appointmentRequest"
+            android:textSize="20dp"
+            android:background="#aaf"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:clickable="true"
+            android:onClick="showDatePicker"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:clickable="true"
+            android:onClick="showTimePicker"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:lines="8"
+            android:scrollbars="vertical"
+            android:background="@drawable/add_post_border"
+            android:layout_margin="20dp"
+            android:textSize="14dp"
+            android:hint="@string/optionalRemark"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="-30dp"
+        android:onClick="commit"
+        android:elevation="5dp"
+        />
+    <!--we need a back button-->
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textSize="20dp"
+    android:background="#eee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/profile"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="profile"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/patient_list"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="patientList"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/appointments"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="appointmments"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/setting"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="setting"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/log_out"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="logOut"/>
+
+
+
+</LinearLayout>

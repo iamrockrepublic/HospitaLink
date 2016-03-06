@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">HopitaLink</string>
+    <string name="action_settings">Settings</string>
+
+    <!--login page-->
+    <string name="enter_id">Enter your ID</string>
+    <string name="enter_password">Password</string>
+    <string name="button_login">Log in</string>
+    <string name="userTypeSelectTitle">Log in as a</string><!--something wrong with this-->
+
+    <string-array name="userTypes_array">
+        <item>Doctor</item>
+        <item>Nurse</item>
+        <item>Family member</item>
+    </string-array>
+
+    <!--left-side navigation bar-->
+    <string name="profile">Profile</string>
+    <string name="appointments">Appointments</string>
+    <string name="patient_list">Patient List</string>
+    <string name="setting">Setting</string>
+    <string name="log_out">Log out</string>
+
+    <!--patienlist page-->
+    <string name="action_menu">Menu</string>
+
+    <!--add post activity-->
+    <string name="comment">Comment</string>
+    <string name="statusUpdate">Status Update</string>
+    <string name="appointmentRequest">Appointment Request</string>
+
+
+    <!--request appointment activity-->
+    <string name="optionalRemark">Optional Remark</string>
+
+    <!--add status activity-->
+    <string name="healthCheck">Health Check</string>
+    <string name="medicalReport">Medical Report</string>
+    <string name="roomChange">Room Change</string>
+    <string name="infoChange">Information Change</string>
+
+    <!--setting activity-->
+    <string name="notifications">Notifications</string>
+    <string name="critical">Critical</string>
+    <string name="unstable">Unstable</string>
+    <string name="stabilising">Stabilising</string>
+    <string name="stable">Stable</string>
+
+    <string-array name="notifyMethods">
+        <item>Ring</item>
+        <item>Sound</item>
+        <item>Vibration</item>
+        <item>Nothing</item>
+    </string-array>
+
+    <string name="ring">Ring</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="nothing">Nothing</string>
+</resources>

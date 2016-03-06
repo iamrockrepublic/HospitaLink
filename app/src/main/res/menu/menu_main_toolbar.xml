@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--"Main menu", appear at the left of title-->
+
+    <item
+        android:id="@+id/action_menu"
+        android:icon="@mipmap/ic_menu_another"
+        android:actionLayout="@layout/custom_action_bar_layout"
+        android:orderInCategory="100"
+        android:title="@string/action_menu"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_test"
+        android:title="test"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
