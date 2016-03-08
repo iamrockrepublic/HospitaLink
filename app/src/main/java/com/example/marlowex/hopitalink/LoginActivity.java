@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class LoginActivity extends AppCompatActivity implements UserTypeSelectionDialog.UserTypeSelectionListener {
 
+    UserLocalStore userLocalStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,8 @@ public class LoginActivity extends AppCompatActivity implements UserTypeSelectio
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        userLocalStore = new UserLocalStore(this);
 
     }
 
@@ -52,6 +55,7 @@ public class LoginActivity extends AppCompatActivity implements UserTypeSelectio
     }
 
     private void loginDoctor(){
+        // userLocalStore.storeUserData("doc123");
         Intent intent = new Intent(this, PatientListActivity.class);
         startActivity(intent);
         finish();
